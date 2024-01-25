@@ -1,0 +1,158 @@
+ @import url('https://fonts.cdnfonts.com/css/inter');
+
+
+ * {
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+     font-family: 'Inter', sans-serif;
+ }
+ body {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .header {
+     width: 100%;
+     /* max-height: 295px; */
+     border: 1px solid #CED4DA;
+     background: linear-gradient(92deg, #087990 0.12%, #055160 100%);
+     padding-top: 68px;
+ }
+
+ .container {
+     width: 100%;
+     max-width: 986px;
+     margin: 0 auto;
+     text-align: center;
+ }
+ .header__title {
+     color: #CFF4FC;
+     width: 100%;
+     /* max-width: 435px; */
+     font-size: 72px;
+     font-style: normal;
+     font-weight: 700;
+     margin: auto;
+ }
+
+ .header__content {
+     color: #CFF4FC;
+     font-size: 21px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 36px;
+     /* 171.429% */
+     margin-bottom: 100px;
+ }
+
+ .main {
+     /* min-height: 100; */
+     background: #EDEEF3;
+     padding: 64px;
+     flex-grow: 1;
+ }
+
+ input {
+     font-family: Inter;
+     font-size: 24px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: 21px;
+     /* 87.5% */
+ }
+
+ input:focus {
+     outline: 2px solid #3bace4;
+     /* outline-offset: 3px; */
+ }
+ .main__input {
+     position: absolute;
+     top: 263px;
+     left: 50%;
+     transform: translateX(-50%);
+
+     display: block;
+     width: 100%;
+     max-width: 820px;
+     border-radius: 4px;
+     border: 1px solid #CED4DA;
+     background: #FFF;
+     padding: 22px 32px;
+ }
+ .cards {
+     width: 100%;
+     max-width: 986px;
+     margin-top: 80px;
+     display: grid;
+     grid-template-columns: repeat(auto-fit, 316px);
+     gap: 19px;
+     justify-content: center;
+ }
+
+ .card {
+     width: 100%;
+     max-width: 316px;
+     padding: 24px;
+     border-radius: 4px;
+     border: 1px solid #DEE2E6;
+     background: #FFF;
+     font-family: Inter;
+ }
+
+ .card__title {
+     font-size: 48px;
+     font-weight: 400;
+     font-family: Inter;
+ }
+
+ .card__subtitle {
+     color: #000;
+     font-size: 17px;
+     font-family: Inter;
+     font-weight: 700;
+     line-height: 28px;
+     text-decoration-line: underline;
+ }
+
+ .card__content {
+     color: #3F444A;
+     text-align: center;
+     font-size: 12px;
+     font-weight: 400;
+     font-family: Inter;
+     text-align: center;
+     padding: 0px 10px;
+ }
+
+ .footer {
+     background: #EDEEF3;
+ }
+
+ .line {
+     background: #CED4DA;
+     margin-bottom: 17px;
+ }
+
+ .footer__content {
+     color: #6C757D;
+     text-align: center;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 21px;
+     font-family: Inter;
+ }
+
+ @media (max-width:540px) {
+     .header__title {
+         font-size: 50px;
+     }
+
+     .header__subtitle {
+         font-size: 28px;
+
+     }
+
+ }
+

@@ -1,7 +1,7 @@
 import {data as emoji} from './data .js'
  
 let input = document.querySelector(".main__input");
-
+// input.toLowerCase();
 renderEmoji(emoji);
 
 // передать данные из  БД 
@@ -49,19 +49,17 @@ function remuveDublicate(obj){
     for(let i = 0; i<arr.length; i++){    
                  if(!newarr.includes(arr[i])){
               newarr.push(arr[i])
-          }  
-    
+          }      
     }
     return newarr.join(' '); 
   }
-
 //  срабатывает ф-я searchEmoji при каждом изминении значения инпут (событие "input")
 input.addEventListener('input',function(e){
-    searchEmoji(emoji, input.value );      
-    // let key = e.key || String.fromCharCode(e.keyCode)
+    searchEmoji(emoji, input.value.toLowerCase()); 
+       // let key = e.key || String.fromCharCode(e.keyCode)
     // if(key = 'Enter'){
     //     searchEmoji(emoji, input.value );       
-    // }
- }
+    // }  
+  }
 )
 
